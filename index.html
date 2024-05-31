@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Judul Halaman Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Kuis</h1>
+  </header>
+  
+  <div class="container">
+    <form id="quizForm">
+      <p>1. Berapakah versi terbaru Python sekarang?</p>
+      <input type="radio" name="answer1" class="answer" value="wrong">
+      <p class="answer">1.24</p>
+      <input type="radio" name="answer1" class="answer" value="wrong">
+      <p class="answer">50</p>
+      <input type="radio" name="answer1" class="answer" value="wrong">
+      <p class="answer">3.14</p>
+      <input type="radio" name="answer1" class="answer" id="correct1" value="correct">
+      <p class="answer">3.9</p>
+      
+      <p>2. Apa yang dimaksud dengan bahasa pemrograman?</p>
+      <div>
+        <input type="radio" name="answer2" class="answer" value="wrong">
+        <p class="answer">bahasanya anak STM</p>
+      </div>
+      <div>
+        <input type="radio" name="answer2" class="answer" value="wrong">
+        <p class="answer">bahasanya petani</p>
+      </div>
+      <div>
+        <input type="radio" name="answer2" class="answer" id="correct2" value="correct">
+        <p class="answer">bahasanya komputer</p>
+      </div>
+      <div>
+        <input type="radio" name="answer2" class="answer" value="wrong">
+        <p class="answer">bahasanya alien</p>
+      </div>
+      
+      <p>3. Tiga bahasa apa yang paling populer?</p>
+      <div>
+        <input type="radio" name="answer3" class="answer" id="correct3" value="correct">
+        <p class="answer">A. JavaScript, Python, dan Java</p>
+      </div>
+      <div>
+        <input type="radio" name="answer3" class="answer" value="wrong">
+        <p class="answer">HTML, CSS, dan JS</p>
+      </div>
+      <div>
+        <input type="radio" name="answer3" class="answer" value="wrong">
+        <p class="answer">HTML, JavaScript, dan Dart</p>
+      </div>
+      <div>
+        <input type="radio" name="answer3" class="answer" value="wrong">
+        <p class="answer">CSS, JavaScript, dan XML</p>
+      </div>
+      
+      <p>4. Salah satu bahasa yang harus dipelajari oleh machine learning?</p>
+      <div>
+        <input type="radio" name="answer4" class="answer" value="wrong">
+        <p class="answer">Ruby</p>
+      </div>
+      <div>
+        <input type="radio" name="answer4" class="answer" value="wrong">
+        <p class="answer">C#</p>
+      </div>
+      <div>
+        <input type="radio" name="answer4" class="answer" id="correct4" value="correct">
+        <p class="answer">Python</p>
+      </div>
+      <div>
+        <input type="radio" name="answer4" class="answer" value="wrong">
+        <p class="answer">HTML</p>
+      </div>
+      
+      <p>5. Sintaks apa yang mirip dengan <code>div</code> di HTML?</p>
+      <div>
+        <input type="radio" name="answer5" class="answer" id="correct5" value="correct">
+        <p class="answer">form</p>
+      </div>
+      <div>
+        <input type="radio" name="answer5" class="answer" value="wrong">
+        <p class="answer">href</p>
+      </div>
+      <div>
+        <input type="radio" name="answer5" class="answer" value="wrong">
+        <p class="answer">ul</p>
+      </div>
+      <div>
+        <input type="radio" name="answer5" class="answer" value="wrong">
+        <p class="answer">tbody</p>
+      </div>
+      
+      <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+  </div>
+  
+  <p id="result"></p>
+  <footer>
+    <p>&copy; 2024 Dany Saputra</p>
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>
